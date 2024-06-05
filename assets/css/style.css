@@ -862,3 +862,15 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  gap: 10px;
+  /* Adjust spacing between flags if needed */
+}
