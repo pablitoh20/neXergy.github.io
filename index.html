@@ -42,30 +42,14 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-      <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
       <nav class="nav-menu">
+        <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
         <ul>
-          <li class="active"><a href="#header" class="scrollto">Home</a></li>
-          <li><a href="#about" class="scrollto">Nosotros</a></li>
-          <li><a href="#why-us" class="scrollto">Porque Elegirnos</a></li>
-          <!-- <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li> -->
-          <li><a href="#contact" class="scrollto">Contacto</a></li>
+          <li class="active"><a href="#header" class="scrollto" data-translate-key="nav_home"></a></li>
+          <li><a href="#about" class="scrollto" data-translate-key="nav_about"></a></li>
+          <li><a href="#why-us" class="scrollto" data-translate-key="nav_why_us"></a></li>
+          <li><a href="#services" class="scrollto" data-translate-key="nav_services"></a></li>
+          <li><a href="#contact" class="scrollto" data-translate-key="nav_contact"></a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -82,9 +66,19 @@
     <div class="content wow animate__animated animate__fadeInUp">
       <!-- Tu contenido aquí -->
       <h1>neXergy</h1>
-      <h2>Servicios y soluciones
-        integrales para el sector
-        energético</h2>
+      <h2 data-translate-key="title"></h2>
+      <p>
+        <!-- Agregar las imágenes aquí -->
+      <div class="image-container">
+
+
+        <img style="cursor: pointer;" id="lang-es" src="./assets/img/sp.png" width="40px" alt="Spanish"
+          class="img-fluid">
+        <img style="cursor: pointer;" id="lang-en" src="./assets/img/en.png" width="40px" alt="English"
+          class="img-fluid">
+      </div>
+
+      </p>
     </div>
   </section>
 
@@ -94,7 +88,7 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="section-title">
-        <h2>Acerca de nosotros</h2>
+        <h2 data-translate-key="about"></h2>
       </div>
       <div class="container">
         <div class="row ">
@@ -102,36 +96,28 @@
             <img src="assets/img/about-img.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 wow animate__animated animate__fadeInRight">
-            <p class="fst-italic">
-              Somos una empresa consultora dedicada al asesoramiento de clientes del sector
-              energético, brindando soluciones inteligentes, prácticas, comprometidas y
-              personalizadas. Constituida en la República de Panamá, desde el 2012 brindamos
-              soluciones tecnológicas y asistencia a compañías eléctricas, grandes clientes y
-              usuarios de la industria de la energía en EE. UU. y América Latina
+            <p class="fst-italic" data-translate-key="about_text_1">
+
             </p>
             <ul>
               <li><i class="bx bx-check-double"></i>
-                Contamos con un equipo de ingenieros especialistas formados con amplia experiencia
-                y trayectoria internacional, que integran conocimientos de las áreas técnica,
-                económica y regulatoria del sector energético.
+                <span data-translate-key="about_text_2"></span>
               </li>
               <li><i class="bx bx-check-double"></i>
-                Nuestros procesos tienen como premisa impulsar el desarrollo de energía sostenible
-                a través de la descarbonización y eficiencia económica, que mejore la seguridad de
-                abastecimiento en una industria en plena transición energética.</li>
+                <span data-translate-key="about_text_3"></span>
+              </li>
 
             </ul>
 
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us section-bg ">
       <div class="section-title">
-        <h2>¿Por Qué elegirnos?"</h2>
+        <h2 data-translate-key="why_us"></h2>
       </div>
       <div class="container">
         <div class="row">
@@ -142,12 +128,8 @@
                 <i class="bx bx-book-reader"></i>
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Misión</a></h5>
-                <p class="card-text">
-                  Generar valor para nuestros clientes globales en el sector energético y minero
-                  integrando soluciones de ingeniería y asesoramiento en la toma de decisiones basados
-                  en tecnologías innovadoras y los modelos computacionales más avanzados.
-                </p>
+                <h5 class="card-title" data-translate-key="why_us_mision"></h5>
+                <p class="card-text" data-translate-key="why_us_mision_text"></p>
               </div>
             </div>
           </div>
@@ -158,9 +140,8 @@
                 <i class="bx bx-calendar-edit"></i>
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Valores</a></h5>
-                <p class="card-text">Nuestro trabajo está guiado continuamente por los principios de integridad,
-                  compromiso, innovación y excelencia. </p>
+                <h5 class="card-title" data-translate-key="why_us_values"></h5>
+                <p class="card-text" data-translate-key="why_us_values_text"></p>
               </div>
             </div>
           </div>
@@ -171,12 +152,8 @@
                 <i class="bx bx-landscape"></i>
               </div>
               <div class="card-body">
-                <h5 class="card-title"><a href="">Visión</a></h5>
-                <p class="card-text">
-                  Estar en la vanguardia de los servicios de consultoría y el desarrollo de modelos
-                  computacionales avanzados para brindar soluciones integrales a los desafíos y
-                  problemas de decisión de las compañías globales del sector energético y minero en su
-                  transición a la neutralidad al carbono.</p>
+                <h5 class="card-title" data-translate-key="why_us_vision"></h5>
+                <p class="card-text" data-translate-key="why_us_vision_text"></p>
               </div>
             </div>
           </div>
@@ -186,83 +163,65 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Frequenty Asked Questions Section ======= -->
-    <section class="faq">
+    <section class="faq" id="services">
       <div class="container">
 
         <div class="section-title">
-          <h2>Los servicios que neXergy desarrolla para sus clientes en la región comprenden:</h2>
+          <h2 data-translate-key="services"></h2>
         </div>
 
         <ul class="faq-list wow animate__animated animate__fadeInUp">
 
           <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">Análisis de Mercado <i
-                class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1"
+              data-translate-key="services_title_1"><i class="bx bx-down-arrow-alt icon-show"></i><i
+                class="bx bx-x icon-close"></i></a>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Soluciones óptimas enfocadas en el abastecimiento y la contratación de energía
-                eléctrica. Análisis técnico, económico y regulatorio de alternativas de abastecimiento
-                con energía eléctrica incluyendo fuentes renovables, térmicas (gas natural, diesel) y
-                sistemas de almacenamiento. Evaluación de confiabilidad de sistemas con generación
-                renovable y determinación de reservas operativas óptimas. Planificación energética
-                óptima sujeta a restricciones técnicas (curtailment), de confiabilidad y de emisiones.
-                Valuación financiera de opcionalidades y flexibilidades estratégicas de proyectos de
-                inversión en infraestructura eléctrica bajo incertidumbres mediante Opciones Reales.
-                Evaluación económica-financiera, análisis y manejo de riesgo de proyectos renovables
-                y convencionales de generación.<br><br>
-                Planificación operativa para determinar escenarios prospectivos, a partir de la
-                evolución de la oferta y demanda, con el objeto de establecer estratégicas que
-                garanticen el abastecimiento de la demanda de largo plazo, determinar niveles
-                óptimos de contratación en el mercado mayorista, niveles de autoproducción y venta
-                de excedentes.<br><br>
-                Asistencia técnica en mercados eléctricos, regulación energética, proyecto y
-                comercialización de energías renovables, y optimización de la operación del sistema
-                hidroeléctrico. Asesoramiento en regulación del transporte de energía eléctrica,
-                mecanismos de expansión, convenios de conexión, solicitudes de acceso a la
-                capacidad de transmisión, pliego para licitaciones y evaluación de ofertas por
-                capacidad y asignación de costos.
+
+                <span data-translate-key="services_text_1a"></span>
+
+                <br><br>
+
+                <span data-translate-key="services_text_1b"></span>
+
+                <br><br>
+
+                <span data-translate-key="services_text_1c"></span>
+
               </p>
             </div>
           </li>
 
+
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">Descarbonización <i
-                class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq2"
+              data-translate-key="services_title_2"><i class="bx bx-down-arrow-alt icon-show"></i><i
+                class="bx bx-x icon-close"></i></a>
             <div id="faq2" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Diseño de planes estratégicos de mediano y largo plazo para reducir y compensar
-                emisiones de CO2 para alcanzar metas de descarbonización (net zero emissions). Los
-                planes se centran en lograr cero emisiones netas, optimizando inversiones, recursos y
-                operaciones para alcanzar las metas de emisiones establecidas al mínimo costo global,
-                preservando la rentabilidad de las compañías.<br><br>
-                Asesoramiento y asistencia técnica para la definición de proyectos y alternativas para
-                la reducción de la Huella de Carbono.<br><br>
-                Análisis del inventario y proyección de emisiones con planes basados en la eficiencia
-                económica y la descarbonización de la operatoria de la empresa.<br><br>
-                Desarrollo de modelos cuantitativos de análisis y valuación de proyectos de reducción,
-                compensación y neutralización de emisiones. Determinación de precios internos del
-                carbono de la compañía.
+                <span data-translate-key="services_title_2_text_2a"></span>
+
+                <br><br>
+
+                <span data-translate-key="services_title_2_text_2b"></span>
+
+                <br><br>
+
+                <span data-translate-key="services_title_2_text_2c"></span>
+
+                <br><br>
+
+                <span data-translate-key="services_title_2_text_2d"></span>
               </p>
             </div>
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">Análisis de Sistemas de Potencia <i
-                class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed" data-translate-key="services_title_3">
+              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
             <div id="faq3" class="collapse" data-bs-parent=".faq-list">
-              <p>
-                Elaboración de estudios eléctricos destinados al análisis de conexión de nuevos
-                consumos, plantas de generación térmica y renovables, equipos de almacenamiento
-                y vínculos al sistema de transmisión de energía eléctrica.
-                Desarrollo y análisis de planes para la operación y expansión de los sistemas de
-                transmisión, con objetivos de gran porcentaje de inyección de generación renovable
-                intermitente y almacenamiento de energía, conforme a criterios de operación y
-                planificación que consideran normativa de calidad, seguridad y desempeño eléctrico.
-                Estudios enfocados en alcanzar sistemas estables y resiliente, con capacidad de
-                anticipar eventos, absorber, adaptarse y recuperarse ante contingencias de red.
-                Evaluación de los niveles de confiabilidad de sistemas destinados al análisis regulatorio
-                de indicadores de calidad de servicio y continuidad de suministro.
-              </p>
+              <p data-translate-key="services_text_3"></p>
             </div>
           </li>
 
@@ -277,7 +236,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Contactanos</h2>
+          <h2 data-translate-key="contact"></h2>
         </div>
 
         <div class="row justify-content-center">
@@ -342,10 +301,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/translations.js"></script>
 
 </body>
 
 </html>
-<script>
-  new WOW().init();
-</script>

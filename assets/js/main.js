@@ -6,7 +6,7 @@
 * License: https://bootstrapmade.com/license/
 */
 
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -38,7 +38,7 @@
   /**
    * Mobile nav toggle
    */
-  const toogleNav = function() {
+  const toogleNav = function () {
     let navButton = select('.nav-toggle')
     navButton.classList.toggle('nav-toggle-active')
     navButton.querySelector('i').classList.toggle('bx-x')
@@ -46,14 +46,14 @@
 
     select('.nav-menu').classList.toggle('nav-menu-active')
   }
-  on('click', '.nav-toggle', function(e) {
+  on('click', '.nav-toggle', function (e) {
     toogleNav();
   })
 
   /**
    * Mobile nav dropdowns activate
    */
-  on('click', '.nav-menu .drop-down > a', function(e) {
+  on('click', '.nav-menu .drop-down > a', function (e) {
     e.preventDefault()
     this.nextElementSibling.classList.toggle('drop-down-active')
     this.parentElement.classList.toggle('active')
@@ -62,7 +62,7 @@
   /**
    * Scrool links with a class name .scrollto
    */
-  on('click', '.scrollto', function(e) {
+  on('click', '.scrollto', function (e) {
     if (select(this.hash)) {
       select('.nav-menu .active').classList.remove('active')
       this.parentElement.classList.toggle('active')
@@ -70,4 +70,25 @@
     }
   }, true)
 
+
+  new WOW().init();
+
+
 })()
+
+function toggleLanguageParam() {
+  var currentUrl = window.location.href;
+  var langParam = currentUrl.indexOf('lang=');
+
+  // Determine the current language and toggle
+  if (langParam !== -1) {
+    var currentLang = currentUrl.substring(langParam + 5, langParam + 7);
+    var newLang = currentLang === 'es' ? 'en' : 'es';
+    var newUrl = currentUrl.replace('lang=' + currentLang, 'lang=' + newLang);
+    window.location.href = newUrl;
+  } else {
+    var separator = currentUrl.indexOf('?') !== -1 ? '&' : '?';
+    var newUrl = currentUrl + separator + 'lang=es'; // Default to Spanish if no lang param exists
+    window.location.href = newUrl;
+  }
+}
