@@ -84,9 +84,17 @@
   }
   window.addEventListener('load', initSwiper);
 
+
+
+
+
+
 })()
 
-
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 function toggleLanguageParam() {
   var currentUrl = window.location.href;
   var langParam = currentUrl.indexOf('lang=');

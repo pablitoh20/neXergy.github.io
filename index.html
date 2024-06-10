@@ -6,12 +6,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>neXergy</title>
+
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/neXergy.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/nx.png" rel="icon">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -40,20 +39,14 @@
   <header id="header">
 
     <div class="container-fluid">
-      <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-between align-items-center ">
 
-        <div class="logo">
-          <h1><a href="index.html">neXergy</a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-        </div>
-        <div>
-          <img style="cursor: pointer;" id="lang-es" src="./assets/img/sp.png" width="35px" alt="Spanish"
-            class="img-fluid">
-          <img style="cursor: pointer;" id="lang-en" src="./assets/img/en.png" width="35px" alt="English"
-            class="img-fluid">
-        </div>
-        <div>
+        <div class="">
+          <div class="translation">
+            <span id="lang-en" style="cursor:pointer">EN</span>
+            |
+            <span id="lang-es" style="cursor:pointer">ES</span>
+          </div>
           <nav class="nav-menu">
             <button type="button" class="nav-toggle"><i class="bx bx-menu"></i></button>
             <ul>
@@ -62,13 +55,12 @@
               <li><a href="#why-us" class="scrollto" data-translate-key="nav_why_us"></a></li>
               <li><a href="#services" class="scrollto" data-translate-key="nav_services"></a></li>
               <li><a href="#contact" class="scrollto" data-translate-key="nav_contact"></a></li>
-
             </ul>
-          </nav><!-- .nav-menu -->
+          </nav>
         </div>
 
-      </div>
 
+      </div>
 
     </div>
   </header><!-- End #header -->
@@ -76,25 +68,26 @@
   <!-- ======= Header Video ======= -->
 
   <section class="video-background">
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted loop id="bg-video" style="filter: contrast(0.3)">
       <source src="assets/video/video.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <div class="content wow animate__animated animate__fadeInUp">
       <!-- Tu contenido aquí -->
-      <h1>neXergy</h1>
-      <h2 data-translate-key="title"></h2>
-      <p>
-
-
-      </p>
+      <div>
+        <img src="./assets/img/company.png" class="img-fluid" width="300" />
+        <h2 data-translate-key="title"></h2>
+      </div>
     </div>
   </section>
 
 
   <main id="main">
-    <br>
+    <button id="goToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3" onclick="scrollToTop()">
+      <i class="bx bx-up-arrow-alt"></i>
+    </button>
     <!-- ======= About Section ======= -->
+
     <section id="about" class="about">
       <div class="section-title">
         <h2 data-translate-key="about"></h2>
@@ -105,56 +98,49 @@
             <img src="assets/img/about-img.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 wow animate__animated animate__fadeInRight">
-            <p class="fst-italic" data-translate-key="about_text_1">
 
-            </p>
-            <ul>
-              <li><i class="bx bx-check-double"></i>
-                <span data-translate-key="about_text_2"></span>
-              </li>
-              <li><i class="bx bx-check-double"></i>
-                <span data-translate-key="about_text_3"></span>
-              </li>
+            <p class="fst-italic about_content" data-translate-key="about_text_1"></p>
 
+            <ul class="about_content">
+              <li><i class="bx bx-check-double"></i><span data-translate-key="about_text_2"></span></li>
+              <li><i class="bx bx-check-double"></i><span data-translate-key="about_text_3"></span></li>
             </ul>
 
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg ">
+    <!-- End About Section -->
+
+    <section id="why-us" class="why-us ">
       <div class="section-title">
-        <h2 data-translate-key="why_us"></h2>
+        <h2 data-translate-key="services"></h2>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInLeft">
             <div class="card">
-              <img src="assets/img/why-us-1.png" class="card-img-top" alt="...">
+              <!-- <img src="assets/img/why-us-1.png" class="card-img-top" alt="..."> -->
               <div class="card-icon">
-                <i class="bx bx-book-reader"></i>
+                <img src="assets/img/analysis.png" class="card-icon" alt="...">
+
+
+
+
               </div>
-              <div class="card-body">
-                <h5 class="card-title" data-translate-key="why_us_mision"></h5>
-                <p class="card-text" data-translate-key="why_us_mision_text"></p>
+              <div class="card-body ">
+                <h4 class="card-title" data-translate-key="services_title_1"></h4>
+                <ul>
+                  <li data-translate-key="services_text_1a"></li>
+                  <li data-translate-key="services_text_1b"></li>
+                  <li data-translate-key="services_text_1c"></li>
+                </ul>
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInDown">
-            <div class="card">
-              <img src="assets/img/why-us-2.png" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="bx bx-calendar-edit"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title" data-translate-key="why_us_values"></h5>
-                <p class="card-text" data-translate-key="why_us_values_text"></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInRight">
             <div class="card">
               <img src="assets/img/why-us-3.avif" class="card-img-top" alt="...">
               <div class="card-icon">
@@ -166,26 +152,44 @@
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInRight ">
+            <div class="card">
+              <img src="assets/img/why-us-2.png" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-calendar-edit"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" data-translate-key="why_us_values"></h5>
+                <p class="card-text" data-translate-key="why_us_values_text"></p>
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section>
 
-    <!-- ======= Frequenty Asked Questions Section ======= -->
-    <section class="faq" id="services">
+    <!-- ======= Services Section ======= -->
+    <section class="services" id="services">
       <div class="container">
 
         <div class="section-title">
           <h2 data-translate-key="services"></h2>
+
         </div>
 
-        <ul class="faq-list wow animate__animated animate__fadeInUp">
+        <ul class="services-list wow animate__animated animate__fadeInUp">
 
           <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">
-              <span data-translate-key="services_title_1"></span>
-              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#services1">
+              <span data-translate-key="services_title_1"></span><br>
+
+
+              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i>
+            </a>
+
+            <div id="services1" class="collapse" data-bs-parent=".services-list">
               <p>
 
                 <span data-translate-key="services_text_1a"></span>
@@ -204,12 +208,12 @@
 
 
           <li>
-            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq2">
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#services2">
 
               <span data-translate-key="services_title_2"></span>
 
               <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+            <div id="services2" class="collapse" data-bs-parent=".services-list">
               <p>
                 <span data-translate-key="services_title_2_text_2a"></span>
 
@@ -229,10 +233,10 @@
           </li>
 
           <li>
-            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">
+            <a data-bs-toggle="collapse" data-bs-target="#services3" class="collapsed">
               <span data-translate-key="services_title_3"></span>
               <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+            <div id="services3" class="collapse" data-bs-parent=".services-list">
               <p data-translate-key="services_text_3"></p>
             </div>
           </li>
@@ -240,7 +244,10 @@
 
         </ul>
 
-    </section><!-- End Frequenty Asked Questions Section -->
+    </section>
+    <!-- End Services Section -->
+
+
 
     <!-- Clients Section -->
     <section id="clients" class="clients section wow animate__animated animate__fadeInUp">
@@ -318,6 +325,58 @@
       </div>
 
     </section><!-- /Clients Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us ">
+      <div class="section-title">
+        <h2 data-translate-key="why_us"></h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInLeft">
+            <div class="card">
+              <img src="assets/img/why-us-1.png" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-book-reader"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" data-translate-key="why_us_mision"></h5>
+                <p class="card-text" data-translate-key="why_us_mision_text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInDown">
+            <div class="card">
+              <img src="assets/img/why-us-3.avif" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-landscape"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" data-translate-key="why_us_vision"></h5>
+                <p class="card-text " data-translate-key="why_us_vision_text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInRight ">
+            <div class="card">
+              <img src="assets/img/why-us-2.png" class="card-img-top" alt="...">
+              <div class="card-icon">
+                <i class="bx bx-calendar-edit"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" data-translate-key="why_us_values"></h5>
+                <p class="card-text" data-translate-key="why_us_values_text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Why Us Section -->
+
     <!-- ======= Contact Us Section ======= -->
     <section id="contact" class="contact section-bg wow animate__animated animate__zoomIn">
       <div class="container">

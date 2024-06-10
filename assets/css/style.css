@@ -84,7 +84,7 @@ h6,
   right: -260px;
   width: 260px;
   padding-top: 18px;
-  background: #006ebfa6;
+  background: #006ebfd9;
   transition: 0.4s;
 }
 
@@ -600,11 +600,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 15px;
   position: relative;
+  color: #006ebf;
 }
 
 .section-title h2::after {
@@ -635,6 +636,8 @@ section {
 .about ul {
   list-style: none;
   padding: 0;
+  font-size: 20px !important;
+
 }
 
 .about ul li {
@@ -642,13 +645,18 @@ section {
 }
 
 .about ul i {
-  font-size: 20px;
+  /* font-size: 20px; */
   padding-right: 4px;
   color: #006ebf;
 }
 
 .about p:last-child {
   margin-bottom: 0;
+}
+
+.about_content {
+  font-size: 20px;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -670,7 +678,7 @@ section {
   margin-top: -32px;
 }
 
-.why-us .card-icon i {
+.why-us .card-icon img {
   font-size: 32px;
   color: #fff;
   width: 64px;
@@ -706,7 +714,7 @@ section {
   color: #5e5e5e;
 }
 
-.why-us .card:hover .card-icon i {
+.why-us .card:hover .card-icon img {
   background: #fff;
   color: #006ebf;
 }
@@ -720,22 +728,23 @@ section {
 /*--------------------------------------------------------------
 # Frequenty Asked Questions
 --------------------------------------------------------------*/
-.faq {
+.services {
   padding-bottom: 60px;
 }
 
-.faq .faq-list {
+.services .services-list {
   padding: 0;
   list-style: none;
 }
 
-.faq .faq-list li {
+.services .services-list li {
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
   padding-bottom: 20px;
+
 }
 
-.faq .faq-list a {
+.services .services-list a {
   display: block;
   position: relative;
   font-family: #006ebf;
@@ -746,36 +755,56 @@ section {
   cursor: pointer;
 }
 
-.faq .faq-list i {
+.services .services-list i {
   font-size: 24px;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.faq .faq-list p {
+.services .services-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
 }
 
-.faq .faq-list .icon-show {
+.services .services-list .icon-show {
   display: none;
 }
 
-.faq .faq-list a.collapsed {
+.services .services-list a.collapsed {
   color: #343a40;
 }
 
-.faq .faq-list a.collapsed:hover {
+.services .services-list a.collapsed:hover {
   color: #006ebf;
 }
 
-.faq .faq-list a.collapsed .icon-show {
+.services .services-list a.collapsed .icon-show {
   display: inline-block;
 }
 
-.faq .faq-list a.collapsed .icon-close {
+.services .services-list a.collapsed .icon-close {
   display: none;
+}
+
+.services-list .card {
+  margin-bottom: 20px;
+}
+
+.services-list .card-header a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-list .card-header a:hover {
+  text-decoration: none;
+}
+
+.services-list .card-header i {
+  font-size: 1.2rem;
 }
 
 /*--------------------------------------------------------------
@@ -846,7 +875,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #006ebf;
+  background: #006ebfd9;
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
@@ -909,4 +938,36 @@ section {
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
+}
+
+.logo {
+  /* Ajusta el tamaño según sea necesario */
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.logo .normal {
+  font-weight: normal;
+}
+
+.logo .bold {
+  vertical-align: middle;
+  font-size: 65px;
+
+}
+
+.logo .italic {
+  font-style: italic;
+}
+
+.translation {
+  color: white;
+  font-weight: 900;
+
+}
+
+.text-justify {
+  text-align: justify;
 }

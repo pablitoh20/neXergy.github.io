@@ -65,7 +65,7 @@ const translations = {
         why_us_vision: "Vision",
         why_us_vision_text: "Estar en la vanguardia de los servicios de consultoría y el desarrollo de modelos computacionales avanzados para brindar soluciones integrales a los desafíos y problemas de decisión de las compañías globales del sector energético y minero en su transición a la neutralidad al carbono.",
 
-        services: "Los servicios que neXergy desarrolla para sus clientes en la región comprenden:",
+        services: "Servicios",
         services_title_1: "Análisis de Mercado",
         services_text_1a: "Soluciones óptimas enfocadas en el abastecimiento y la contratación de energía eléctrica. Análisis técnico, económico y regulatorio de alternativas de abastecimiento con energía eléctrica incluyendo fuentes renovables, térmicas (gas natural, diesel) y sistemas de almacenamiento. Evaluación de confiabilidad de sistemas con generación renovable y determinación de reservas operativas óptimas. Planificación energética óptima sujeta a restricciones técnicas (curtailment), de confiabilidad y de emisiones. Valuación financiera de opcionalidades y flexibilidades estratégicas de proyectos de inversión en infraestructura eléctrica bajo incertidumbres mediante Opciones Reales. Evaluación económica-financiera, análisis y manejo de riesgo de proyectos renovables y convencionales de generación.",
         services_text_1b: "Planificación operativa para determinar escenarios prospectivos, a partir de la evolución de la oferta y demanda, con el objeto de establecer estratégicas que garanticen el abastecimiento de la demanda de largo plazo, determinar niveles óptimos de contratación en el mercado mayorista, niveles de autoproducción y venta de excedentes.",
