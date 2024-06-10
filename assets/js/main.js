@@ -88,7 +88,30 @@
 
   window.onscroll = function () {
     const goToTopBtn = document.getElementById('goToTopBtn');
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    const footer = document.getElementById('footer'); // Reemplaza 'footer' con el ID de tu elemento footer
+
+    // Obtener la posición del scroll y la altura de la ventana
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+    // Obtener la posición y altura del footer
+    const footerPosition = footer.offsetTop;
+    const footerHeight = footer.offsetHeight;
+
+    // Calcular la posición del final de la página
+    const endOfPage = footerPosition + footerHeight;
+
+    // Determinar si el usuario ha llegado al footer o al final de la página
+    if (scrollPosition + windowHeight >= endOfPage) {
+      // Estás en el footer o al final de la página
+      goToTopBtn.classList.add('footer-goToTopBtn'); // Agrega una clase para cambiar el color del icono a azul
+    } else {
+      // No estás en el footer
+      goToTopBtn.classList.remove('footer-goToTopBtn'); // Agrega una clase para cambiar el color del icono a azul
+    }
+
+    // Mostrar u ocultar el botón de scroll-to-top basado en la posición del scroll
+    if (scrollPosition > 20) {
       goToTopBtn.style.display = 'block';
     } else {
       goToTopBtn.style.display = 'none';

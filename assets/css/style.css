@@ -991,3 +991,17 @@ section {
   z-index: 10000;
   /* Asegura que esté por encima de otros elementos */
 }
+
+.footer-goToTopBtn {
+  transition: 2ms;
+  background-color: #fff;
+  /* Oculto por defecto */
+}
+
+.footer-goToTopBtn i {
+  color: #0d6efd;
+}
+
+.footer-goToTopBtn:hover i {
+  color: #fff;
+}
