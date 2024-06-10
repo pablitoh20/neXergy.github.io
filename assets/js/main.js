@@ -86,7 +86,14 @@
 
 
 
-
+  window.onscroll = function () {
+    const goToTopBtn = document.getElementById('goToTopBtn');
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      goToTopBtn.style.display = 'block';
+    } else {
+      goToTopBtn.style.display = 'none';
+    }
+  };
 
 
 })()

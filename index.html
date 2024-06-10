@@ -83,9 +83,7 @@
 
 
   <main id="main">
-    <button id="goToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3" onclick="scrollToTop()">
-      <i class="bx bx-up-arrow-alt"></i>
-    </button>
+
     <!-- ======= About Section ======= -->
 
     <section id="about" class="about">
@@ -113,65 +111,9 @@
 
     <!-- End About Section -->
 
-    <section id="why-us" class="why-us ">
-      <div class="section-title">
-        <h2 data-translate-key="services"></h2>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInLeft">
-            <div class="card">
-              <!-- <img src="assets/img/why-us-1.png" class="card-img-top" alt="..."> -->
-              <div class="card-icon">
-                <img src="assets/img/analysis.png" class="card-icon" alt="...">
-
-
-
-
-              </div>
-              <div class="card-body ">
-                <h4 class="card-title" data-translate-key="services_title_1"></h4>
-                <ul>
-                  <li data-translate-key="services_text_1a"></li>
-                  <li data-translate-key="services_text_1b"></li>
-                  <li data-translate-key="services_text_1c"></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInDown">
-            <div class="card">
-              <img src="assets/img/why-us-3.avif" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="bx bx-landscape"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title" data-translate-key="why_us_vision"></h5>
-                <p class="card-text " data-translate-key="why_us_vision_text"></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch  wow animate__animated  animate__fadeInRight ">
-            <div class="card">
-              <img src="assets/img/why-us-2.png" class="card-img-top" alt="...">
-              <div class="card-icon">
-                <i class="bx bx-calendar-edit"></i>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title" data-translate-key="why_us_values"></h5>
-                <p class="card-text" data-translate-key="why_us_values_text"></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <!-- ======= Services Section ======= -->
-    <section class="services" id="services">
+    <section class="services section-bg" id="services">
       <div class="container">
 
         <div class="section-title">
@@ -183,26 +125,17 @@
 
           <li>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#services1">
-              <span data-translate-key="services_title_1"></span><br>
-
-
+              <h3 data-translate-key="services_title_1"></h3>
               <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i>
             </a>
 
-            <div id="services1" class="collapse" data-bs-parent=".services-list">
-              <p>
+            <div id="services1" class="collapse text-justify" data-bs-parent=".services-list">
 
-                <span data-translate-key="services_text_1a"></span>
-
-                <br><br>
-
-                <span data-translate-key="services_text_1b"></span>
-
-                <br><br>
-
-                <span data-translate-key="services_text_1c"></span>
-
-              </p>
+              <ul>
+                <li class="no-line" data-translate-key="services_text_1a"></li>
+                <li class="no-line" data-translate-key="services_text_1b"></li>
+                <li class="no-line" data-translate-key="services_text_1c"></li>
+              </ul>
             </div>
           </li>
 
@@ -210,34 +143,30 @@
           <li>
             <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#services2">
 
-              <span data-translate-key="services_title_2"></span>
+              <h3 data-translate-key="services_title_2"></h3>
+              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i>
 
-              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            </a>
             <div id="services2" class="collapse" data-bs-parent=".services-list">
-              <p>
-                <span data-translate-key="services_title_2_text_2a"></span>
-
-                <br><br>
-
-                <span data-translate-key="services_title_2_text_2b"></span>
-
-                <br><br>
-
-                <span data-translate-key="services_title_2_text_2c"></span>
-
-                <br><br>
-
-                <span data-translate-key="services_title_2_text_2d"></span>
-              </p>
+              <ul>
+                <li data-translate-key="services_title_2_text_2a"></li>
+                <li data-translate-key="services_title_2_text_2b"></li>
+                <li data-translate-key="services_title_2_text_2c"></li>
+                <li data-translate-key="services_title_2_text_2d"></li>
+              </ul>
             </div>
           </li>
 
           <li>
             <a data-bs-toggle="collapse" data-bs-target="#services3" class="collapsed">
-              <span data-translate-key="services_title_3"></span>
-              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i></a>
+              <h3 data-translate-key="services_title_3"></h3>
+              <i class="bx bx-down-arrow-alt icon-show"></i><i class="bx bx-x icon-close"></i>
+            </a>
             <div id="services3" class="collapse" data-bs-parent=".services-list">
-              <p data-translate-key="services_text_3"></p>
+              <ul>
+
+                <li data-translate-key="services_text_3"></li>
+              </ul>
             </div>
           </li>
 
@@ -341,7 +270,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title" data-translate-key="why_us_mision"></h5>
-                <p class="card-text" data-translate-key="why_us_mision_text"></p>
+                <p class="card-text text-justify" data-translate-key="why_us_mision_text"></p>
               </div>
             </div>
           </div>
@@ -354,7 +283,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title" data-translate-key="why_us_vision"></h5>
-                <p class="card-text " data-translate-key="why_us_vision_text"></p>
+                <p class="card-text text-justify" data-translate-key="why_us_vision_text"></p>
               </div>
             </div>
           </div>
@@ -367,7 +296,7 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title" data-translate-key="why_us_values"></h5>
-                <p class="card-text" data-translate-key="why_us_values_text"></p>
+                <p class="card-text text-justify" data-translate-key="why_us_values_text"></p>
               </div>
             </div>
           </div>
@@ -422,19 +351,24 @@
       </div>
     </section><!-- End Contact Us Section -->
 
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="wow animate__animated animate__fadeInDown">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>neXergy</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón para ir arriba -->
+    <button id="goToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3" onclick="scrollToTop()">
+      <i class="bx bx-up-arrow-alt"></i>
+    </button>
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="wow animate__animated animate__fadeInDown">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>neXergy</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-
-      </div>
-    </div>
-  </footer>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

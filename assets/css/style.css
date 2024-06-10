@@ -971,3 +971,10 @@ section {
 .text-justify {
   text-align: justify;
 }
+
+#goToTopBtn {
+  display: none;
+  /* Oculto por defecto */
+  z-index: 10000;
+  /* Asegura que esté por encima de otros elementos */
+}
