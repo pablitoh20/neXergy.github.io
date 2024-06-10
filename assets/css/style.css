@@ -732,6 +732,11 @@ section {
   padding-bottom: 60px;
 }
 
+.services h3 {
+  font-weight: bold !important;
+
+}
+
 .services .services-list {
   padding: 0;
   list-style: none;
@@ -739,6 +744,14 @@ section {
 
 .services .services-list li {
   border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+
+}
+
+.services .services-list .no-line li {
+  border-bottom: none !important;
+
   margin-bottom: 20px;
   padding-bottom: 20px;
 
