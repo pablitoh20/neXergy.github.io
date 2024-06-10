@@ -742,18 +742,17 @@ section {
   list-style: none;
 }
 
-.services .services-list li {
+.services .services-list .first-level {
   border-bottom: 1px solid #eee;
   margin-bottom: 20px;
   padding-bottom: 20px;
 
 }
 
-.services .services-list .no-line li {
-  border-bottom: none !important;
+.services .services-list .second-level {
 
-  margin-bottom: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 
 }
 
