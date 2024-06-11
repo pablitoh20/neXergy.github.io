@@ -691,6 +691,13 @@ section {
   display: inline-block;
 }
 
+.why-us .card-icon i:hover{
+  background-color: #fff;
+  color: #006ebf;
+  transition: 0.3s;
+
+}
+
 .why-us .card-body {
   padding-top: 12px;
 }
