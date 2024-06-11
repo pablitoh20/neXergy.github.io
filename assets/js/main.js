@@ -88,8 +88,9 @@
 
   window.onscroll = function () {
     const goToTopBtn = document.getElementById('goToTopBtn');
-    const footer = document.getElementById('footer'); // Reemplaza 'footer' con el ID de tu elemento footer
-    const logoNav = document.getElementById('logo_nav'); // Reemplaza 'footer' con el ID de tu elemento footer
+    const footer = document.getElementById('footer'); 
+    const logoNav = document.getElementById('logo_nav'); 
+    const translations = document.getElementById('translations'); 
 
     // Obtener la posición del scroll y la altura de la ventana
     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
@@ -111,12 +112,14 @@
     }
 
     // Mostrar u ocultar el botón de scroll-to-top basado en la posición del scroll
-    if (scrollPosition > 100) {
+    if (scrollPosition > 350) {
       goToTopBtn.style.display = 'block';
       logoNav.style.display = 'block'
+      translations.classList.add('translation-color');
     } else {
       goToTopBtn.style.display = 'none';
       logoNav.style.display = 'none'
+      translations.classList.remove('translation-color');
 
     }
   };

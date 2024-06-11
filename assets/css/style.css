@@ -676,7 +676,7 @@ section {
   margin-top: -32px;
 }
 
-.why-us .card-icon img {
+.why-us .card-icon i {
   font-size: 32px;
   color: #fff;
   width: 64px;
@@ -975,7 +975,20 @@ section {
 .translation {
   color: white;
   font-weight: 900;
+  position: fixed;
+  right: 65px;
+  top: 15px;
+  z-index: 9998;
+  border: 0;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+  padding: 10px 12px;
 
+}
+
+.translation-color{
+  color: #006ebf !important;
 }
 
 .text-justify {
